@@ -57,5 +57,24 @@
     </datalist>
 
     <h2>4. button</h2>
+
+    <!-- cf) input 태그의 type 속성(submit, reset, button)
+          : submit/reset 속성값의 경우 태그 자체에 기능이 포함
+          : button 속성값은 가능 x
+          == button 태그
+    -->
+          <ul>
+            <li><input type="submit"></li>
+            <li><input type="reset"></li>
+            <li><input type="button" value="버튼"></li>
+          </ul>
+
+          <ul>
+            <li><button type="submit">전송버튼</button></li>
+            <li><button type="reset">초기화 버튼</button></li>
+          </ul>
+          
+          <!-- 버튼 형태만 삽입: 기능은 js를 통해 설정 -->
+          <li><button type="button">일반 버튼</button></li>
 </body>
 </html>
