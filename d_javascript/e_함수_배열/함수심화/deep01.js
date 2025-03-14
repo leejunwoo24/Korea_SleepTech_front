@@ -36,7 +36,7 @@ function callback(callbackFunc){
     }
 }
 
-callback(print)
+callback(print);
 
 // 2번째 함수 호출
 
