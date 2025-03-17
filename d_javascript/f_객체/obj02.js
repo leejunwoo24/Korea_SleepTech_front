@@ -64,6 +64,10 @@ console.log('=== this ===');
 console.log(this); // {} 해당 파일의 전역 스코프(전역 상태)
 
 let num = 1;
+const PI = 3.14;
+function add(a, b) {
+  return a + b;
+}
 
 
 
