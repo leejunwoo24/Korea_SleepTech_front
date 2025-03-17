@@ -83,3 +83,13 @@ console.log(birthYear + "년도에 태어난 사람의 나이는 " + age + '세�
 const PI = 3.14;
 
 // PI = 2.14; - ERROR
+
+
+
+
+
+test(); // TypeError: test is not a function
+
+var test= function(){
+  console.log(`호이스팅을 시도`);
+}
