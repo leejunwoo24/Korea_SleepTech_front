@@ -64,3 +64,9 @@ body{
   justify-content: space-between;
   align-items: center;
 }
+
+
+.completed {
+  text-decoration: line-through;
+  color: #4cae4c;
+}
