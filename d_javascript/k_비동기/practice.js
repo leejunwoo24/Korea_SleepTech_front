@@ -18,7 +18,7 @@ function fetchPromiseUserData() {
   try{
     fetch("https://jsonplaceholder.typicode.com/users")
     .then(response => {
-      //HTTP 응답 상태 확인 (200번대가 아니라면 애러 발처리)
+      //HTTP 응답 상태 확인 (200번대가 아니라면 애러 발생처리)
 
       if(!response.ok){
         throw new Error(`HTTP error status: ${response.status}`)
@@ -100,6 +100,9 @@ function fetchPromiseAlbumData(){
       const albums =  response.json();
 
       console.log(albums);
+      albums.forEach( album => {
+        console.log(album);
+      })
     })
 
   } catch(e){
