@@ -11,7 +11,7 @@ document.cookie = "cookie02=쿠키2; path=/;"
 // : http://127.0.0.1"5500
 
 // cf) 현 파일의 liveserver 주소
-// : /d_javascript/n_%EC%A0%0
+// : /d_javascript/n_%EC%A0%80%EC%9E%A5%EC%86%8C/c_cookies02.html
 
 // ! 쿠기값 가져오기
 // 1) document.cookie에서 반환된 문자열을 분석
@@ -23,12 +23,12 @@ document.cookie = "cookie02=쿠키2; path=/;"
 
 
 function getCookievalue(cookieName) {
-  let cookie = document.cookie.split(';');
+  let cookies = document.cookie.split(';');
 
-  let length = cookie.length;
+  let length = cookies.length;
 
   for (let i = 0; i < length; i++){
-    let cookie = cookie[i]; // 배열 순회 + 각 쿠키를 변수에 저장
+    let cookie = cookies[i]; // 배열 순회 + 각 쿠키를 변수에 저장
 
     let parts = cookie.split('='); //쿠키를 이름과 값으로 분리
     let name = parts[0].trim();
@@ -42,7 +42,7 @@ function getCookievalue(cookieName) {
 }
 
 let username = getCookievalue('username');
-console.log(username);
+console.log(username); // lsa
 
 let userAge = getCookievalue('userAge');
 console.log(userAge); // ''
@@ -52,7 +52,7 @@ console.log(userAge); // ''
 document.cookie = "username=이승아"
 
 let changedUsername = getCookievalue('username');
-console.log(changedUsername);
+console.log(changedUsername); // 이승아
 
 
 //! 쿠키값 삭제

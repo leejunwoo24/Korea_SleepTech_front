@@ -28,14 +28,24 @@
   cf) threshold: 한계점
 */
 
+class scores{
+  
+  constructor(Math, English, Scinece){
+    this.Math = Math;
+    this.English = English;
+    this.Scinece = Scinece;
+  }
+}
 
-const Student = {
+
+
+class Student {
 
   constructor(id, name, scores){
     this.id = id;
     this.name = name;
     this.socres = scores;
-  },
+  }
 
   getAverageScore(){
     let totalScore;
@@ -48,22 +58,37 @@ const Student = {
 
 }
 
-const GradeManagement = {
+class GradeManagement {
 
   constructor(){
     this.students = [];
     this.studentId = 1;
-  },
+  }
 
   addStudent(name, scores){
     const newStudent = new Student(this.studentId, name, scores);
     this.students.push(newStudent);
     console.log(`새로운 학생 데이터 추가 id: ${this.studentId} 이름: ${name} 점수${scores}`);
     this.studentId++;
-  },
+  }
 
   getAverageScore(){
-    const studentAverageScore = this.students.map(student => student.getAverageScore) 
-  },
+      studentAverageScore = this.students.map(student =>{
+      const newStudents = { 
+        id: student.id,
+        name: student.name,
+        averageScore: student.getAverageScore()
+      }
+
+      return newStudents;
+    }); 
+
+    return studentAverageScore;
+  }
+
+
+  getTopStudents(){
+    this.getAverageScore().filter(student => student.averageScore >= 80);
+  }
 
 }
