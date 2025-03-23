@@ -97,12 +97,10 @@ function fetchPromiseAlbumData(){
         throw new Error(`데이터 가져오기 실패! ${res.status}땜시`);
       }
 
-      const albums =  response.json();
-
-      console.log(albums);
-      albums.forEach( album => {
-        console.log(album);
-      })
+      
+      return  response.json();
+    }).then(albums => {
+      albums.forEach(album => console.log(album));
     })
 
   } catch(e){
