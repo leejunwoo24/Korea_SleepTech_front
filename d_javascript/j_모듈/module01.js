@@ -45,7 +45,7 @@ import * as module2 from './module02.js';
 console.log(module2.PI);
 console.log(module2.multiply(4, 6)); // 24
 
-// ?  2) 기본 가져오기 - 중괄호 사용
+// ?  2) 기본 가져오기 - 중괄호 사용 
 // import 시 지정된 모듈명을 변경하여 사용 가능
 // : 개발자 지정 가능
 import add from './module02.js';
