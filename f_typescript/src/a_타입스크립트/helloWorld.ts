@@ -32,3 +32,8 @@ console.log('ts-node로 ts파일 생성하기');
 // *node_modules
 
 
+// ! 해당 프로젝트를 pull한 경우
+// : f_typescirpt(node_modules 폴더가 존재해야하는 위치)
+// -npm install
+
+
