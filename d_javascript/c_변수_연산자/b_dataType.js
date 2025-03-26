@@ -60,7 +60,7 @@ console.log(typeof bool2); // boolean
 // * 4) null & undefuned
 
 // 4-1) null: 아무것도 없다.
-//      >> 변수의 데이터가 유효하지 않는 경우, 참조할 데이터가 없다
+//!  >>변수의 데이터가 유효하지 않는 경우, 참조할 데이터가 없다
 
 let value = null;
 console.log(typeof value); // object

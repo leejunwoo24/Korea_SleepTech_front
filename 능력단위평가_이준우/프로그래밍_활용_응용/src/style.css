@@ -1,0 +1,50 @@
+body{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  height: 945px;
+}
+
+h1{
+  text-align: center;
+}
+
+.loginContainer{
+  
+  border-radius: 5px;
+  background-color: white;
+  width: 270px;
+
+}
+
+.loginForm{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  width: 80%;
+  height: 25px;
+  border-radius: 5px;
+  border-color:gray ;
+  margin-bottom: 4px;
+}
+
+button{
+  width: 83.5%;
+  height: 35px;
+  border-radius: 5px;
+  border-color:gray ;
+  background-color: turquoise;
+  color: white;
+}
+
+p{
+  font-size: 13px;
+}
