@@ -55,4 +55,4 @@ let newAdminUser: User = {
 }
 
 let adminUser1 = createAdminUser(newAdminUser);
-console.log(adminUser1); //{ id: 'qwe123', password: 'qweqwe123123', isAdmin: true }
+console.log(adminUser1); //{ id: 'qwe123', password: 'qweqwe123123', isAdmin: true };
