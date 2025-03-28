@@ -30,12 +30,12 @@ function addTodo(todos: ITodoItem[] , task: string): ITodoItem[]{
 
 
 //! 특정 id를 가진 Todo 항목을 완료 상태로 변경하는 함수(completeTodo)
-function completed(id: number): void {
-  todos.forEach(todo => todo.id === id ? !todo.completed : todo.completed) ;
+function completed(todos: ITodoItem[] ,id: number): void {
+  todos.forEach(todo => todo.id === id ? !todo.completed : todo.completed);
 }
 
 //! 특정 id를 가진 Todo 항목을 삭제하는 함수(deleteTodo)
-function deleteTodo(id: number): void{
+function deleteTodo(todos: ITodoItem[], id: number): void{
   todos.filter(todo => todo.id !== id);
 }
 //! 특정 id를 가진 Todo 항목의 task를 편집하는 함수(editTodo)
@@ -69,7 +69,11 @@ function setAllTodosCompletion(){
 
 //# 함수 사용 예시
 let todos: ITodoItem[] = [];
-addTodo(todos, "잠자기");
-addTodo(todos, "집에가기");
+todos = addTodo(todos, "잠자기");
+todos = addTodo(todos, "집에가기");
+todos = addTodo(todos, "놀기");
+todos = addTodo(todos, "쉬기");
 
-getAlltodos();
+completed(todos ,1);
+deleteTodo(todos, 1);
+console.log(todos);
