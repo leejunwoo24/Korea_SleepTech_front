@@ -1,4 +1,4 @@
-/// main.ts
+// main.ts
 const app = document.getElementById('app');
 
 //! 1) 그림판 툴 상태를 담는 객체
