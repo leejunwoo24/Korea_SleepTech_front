@@ -82,3 +82,10 @@ async
     - HTML: a태그 활용 (다른 페이지로 이동)
     - CSS: flex 속성
     - JavaScript: DOM 조작, 이벤트 처리, localStorage, 페이지 이동
+
+
+    // localStorage.getItem
+                   .setItem
+
+
+    location.herf
