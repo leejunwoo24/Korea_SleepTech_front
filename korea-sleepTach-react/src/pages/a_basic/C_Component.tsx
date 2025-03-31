@@ -54,7 +54,7 @@ function Img() {
   );
 }
 
-export {Img}
+export { Img }
 
 function imgFunc() {
   // ts의 '일반 함수' (컴포넌트 X)

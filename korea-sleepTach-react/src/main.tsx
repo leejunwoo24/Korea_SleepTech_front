@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import { BrowserRouter } from 'react-router-dom'
 
-// ! 프로젝의 실행 순서는 3 -> 2 -> 1
+// ! 프로젝트의 실행 순서는 3 -> 2 -> 1
 
 // 3. index.html의 id가 root인 div 요소와 연결
 // 2. main.tsx는 index.html의 요소에 출력

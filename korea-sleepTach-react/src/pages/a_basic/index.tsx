@@ -8,6 +8,9 @@ import C_Component from "./C_Component";
 import { Img } from "./C_Component";
 import D_JSX from "./D_JSX";
 import E_jsx from "./E_jsx";
+import F_Props from "./F_Props";
+import G_props from "./g_props";
+import H_Rendering from "./H_Rendering";
 
 const h2Style = {
   backgroudColor: "black",
@@ -37,6 +40,13 @@ function index() {
       <h2 style={h2Style}>3 JSX(TSX): 리액트의 기본 문법</h2>
       <D_JSX/>
       <E_jsx/>
+
+      <h2 style={h2Style}>4. Props: 리액트의 데이터 전달(부모/자식)</h2>
+      <F_Props/>
+      <G_props/>
+
+      <h2 style={h2Style}>5. Rendering: 조건부 렌더링</h2>
+      <H_Rendering />
     </div>
   );
 }
