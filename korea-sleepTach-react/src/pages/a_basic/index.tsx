@@ -9,8 +9,9 @@ import { Img } from "./C_Component";
 import D_JSX from "./D_JSX";
 import E_jsx from "./E_jsx";
 import F_Props from "./F_Props";
-import G_props from "./g_props";
+import G_props from "./G_Props";
 import H_Rendering from "./H_Rendering";
+import I_Handler from "./I_Handler";
 
 const h2Style = {
   backgroudColor: "black",
@@ -47,6 +48,9 @@ function index() {
 
       <h2 style={h2Style}>5. Rendering: 조건부 렌더링</h2>
       <H_Rendering />
+
+      <h2 style={h2Style}>6. Handler: 리액트의 이벤트 핸들러</h2>
+      <I_Handler />
     </div>
   );
 }

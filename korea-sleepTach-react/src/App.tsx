@@ -5,6 +5,7 @@ import './App.css'
 
 //? cf) index 파일명 - 하나의 폴더 내에서 한 번만 사용 가능!
 import Basic from '@/pages/a_basic'; // '@/pages/a_basic/index.tsx
+import Hooks from '@/pages/b_hooks';
 // >> index.tsx 파일은 해당 파일이 포함된 폴더의 메인 파일로 인식!
 // >> import 시 폴더명 만으로 가져오기 가능!
 
@@ -24,6 +25,7 @@ function App() {
           http://localhost:5173/basic
         */}
         <Route path='/basic' element={<Basic/>}/>
+        <Route path='/hooks' element={<Hooks/>}/>
       
       </Routes>
     </>

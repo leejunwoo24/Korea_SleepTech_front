@@ -1,5 +1,5 @@
 import React from 'react'
-import { Wrapper } from './g_props';
+import { Wrapper } from './G_Props';
 
 /*
   컴포넌트(Component): 리액트의 구성요소(UI)
