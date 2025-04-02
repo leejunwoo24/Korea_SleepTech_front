@@ -61,7 +61,7 @@ function UseEffect02() {
   // 만약에 중괄호 내부에 구현부를 작성을 했는데 리턴을 작성 안하면 반환이 발생하지 않게 된다.
   // return을 작성하지 않고 반환을 받을 수 있는 경우는 중괄호 스코프가 없는 한 줄 코드가 자동으로 반환이 일어난다.
   const filteredPosts = posts.filter((post) => {
-    return post.title.toLowerCase().includes(searchTerm.toLowerCase())
+    post.title.toLowerCase().includes(searchTerm.toLowerCase())
   });
   
   return (
