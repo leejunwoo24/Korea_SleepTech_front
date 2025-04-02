@@ -84,7 +84,7 @@ export const tep = '';
 //# 2. tscongin.json
 // : TypeScript 설정 파일
 
-// # 3. vite.confing.ts
+// # 3. vite.config.ts
 // : vite 설정 파일
 // : vite 프로젝트의 빌드/개발 설정 담당
 // - 플러그인, 경로 alias, 서버 설정 등을 설정 기능
