@@ -17,7 +17,7 @@ import ReactMemo from "./d_useCallback_useMemo/ReactMemo";
 import UseReducer01 from "./e_useReducer/UseReducer01";
 import Custom01 from "./f_customHook/Custom01";
 import Custom02 from "./f_customHook/Custom02";
-import TodoAppLocalStorage from "./z_todo/todoAppLocalStorage";
+import TodoAppLocalStorage from "./z_todo/TodoAppLocalStorage";
 
 const h2Style = {
   backgroundColor: "black",

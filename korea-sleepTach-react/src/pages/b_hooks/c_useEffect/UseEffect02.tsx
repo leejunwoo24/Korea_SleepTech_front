@@ -30,13 +30,14 @@ function UseEffect02() {
 
     try{
       const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-
+      
       if(!response.ok){
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
 
       const data = await response.json();
+    
 
       // 데이터 처리가 완료 (성공)
       setPosts(data);
@@ -60,9 +61,9 @@ function UseEffect02() {
   // 함수의 구현부 경우 중괄호가 있으면 return도 세트로 묶여있어야 한다.
   // 만약에 중괄호 내부에 구현부를 작성을 했는데 리턴을 작성 안하면 반환이 발생하지 않게 된다.
   // return을 작성하지 않고 반환을 받을 수 있는 경우는 중괄호 스코프가 없는 한 줄 코드가 자동으로 반환이 일어난다.
-  const filteredPosts = posts.filter((post) => {
-    post.title.toLowerCase().includes(searchTerm.toLowerCase())
-  });
+  const filteredPosts = posts.filter((post) => 
+    post.title.toLowerCase().includes(searchTerm.toLowerCase()) 
+  );
   
   return (
     <div style={{
