@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { data } from 'react-router-dom';
+
 
 // jsonplaceholder의 posts 데이터를 비동기 함수로 가져오기
 // async, await, fetch()
