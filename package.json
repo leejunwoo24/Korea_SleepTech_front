@@ -2,7 +2,7 @@
   "name": "korea_sleeptech_front",
   "version": "1.0.0",
   "description": "",
-  "type" : "module",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/leejunwoo24/Korea_SleepTech_front/issues"
   },
-  "homepage": "https://github.com/leejunwoo24/Korea_SleepTech_front#readme"
+  "homepage": "https://github.com/leejunwoo24/Korea_SleepTech_front#readme",
+  "dependencies": {
+    "zustand": "^5.0.3"
+  }
 }

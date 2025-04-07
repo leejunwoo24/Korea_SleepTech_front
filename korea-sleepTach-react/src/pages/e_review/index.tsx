@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Search from './pages/Search';
-import Profile from './pages/profile';
+import Profile from './pages/Profile';
 
 const h2Style = {
   backgroundColor: "black",
