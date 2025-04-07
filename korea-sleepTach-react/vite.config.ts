@@ -16,6 +16,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'), // @ 기호를 src 폴더로 인식
-    }
+    } 
   }
 })
